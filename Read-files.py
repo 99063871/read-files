@@ -1,7 +1,6 @@
 import time
 
-ReadMe = open("README.md", "r")
-
-for line in ReadMe:
-    print(line)
-    time.sleep(1)
+with open("README.md") as file:
+    for line in file:
+        print(line)
+        time.sleep(1)
